@@ -2,11 +2,13 @@
 import ContextDemo from "./pages/ContextDemo/ContextDemo";
 import ContextDemo1 from "./pages/ContextDemo/Test01";
 import ContextDemo2 from "./pages/ContextDemo/Test02";
+import ContextDemo3 from "./pages/ContextDemo/Test03";
+import ErrorBoundary from './pages/ErrorBoundary/ErrorBoundary'
 
 function App() {
   return (
     <div className="App">
-      <ContextDemo2 />
+      <ErrorBoundary />
     </div>
   );
 }
