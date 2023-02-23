@@ -1,11 +1,12 @@
 // import './App.css';
 import ContextDemo from "./pages/ContextDemo/ContextDemo";
 import ContextDemo1 from "./pages/ContextDemo/Test01";
+import ContextDemo2 from "./pages/ContextDemo/Test02";
 
 function App() {
   return (
     <div className="App">
-      <ContextDemo1 />
+      <ContextDemo2 />
     </div>
   );
 }
