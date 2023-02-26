@@ -4,11 +4,19 @@ import ContextDemo1 from "./pages/ContextDemo/Test01";
 import ContextDemo2 from "./pages/ContextDemo/Test02";
 import ContextDemo3 from "./pages/ContextDemo/Test03";
 import ErrorBoundary from './pages/ErrorBoundary/ErrorBoundary'
+import RefDemo from "./pages/Refs/RefDemo";
+import RefDemo1 from "./pages/Refs/RefDemo1";
+import RefDemo2 from "./pages/Refs/RefDemo2";
+import RefDemo3 from "./pages/Refs/RefDemo3";
+import RefDemo4 from "./pages/Refs/RefDemo4";
+import FragmentDemo from "./pages/FragmentDemo/FragmentDemo";
+import HocApp from "./pages/HOC/HocDemo";
+import ProtalDemo from "./pages/Portal/ProtalDemo";
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary />
+      <ProtalDemo />
     </div>
   );
 }
