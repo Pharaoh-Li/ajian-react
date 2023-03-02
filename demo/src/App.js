@@ -12,11 +12,17 @@ import RefDemo4 from "./pages/Refs/RefDemo4";
 import FragmentDemo from "./pages/FragmentDemo/FragmentDemo";
 import HocApp from "./pages/HOC/HocDemo";
 import ProtalDemo from "./pages/Portal/ProtalDemo";
+import EffectDemo from "./pages/hooks/useEffect/EffectDemo";
+import ContextHookDemo from "./pages/hooks/useContext/ContextDemo";
+import CallbackDemo from "./pages/hooks/useCallback/CallbackDemo";
+import MemoDemo from "./pages/hooks/useMemo/MemoDemo";
+import RefHookDemo from "./pages/hooks/useRef/RefDemo";
+import AppDemo from "./pages/RouterDemo/App";
 
 function App() {
   return (
     <div className="App">
-      <ProtalDemo />
+      <AppDemo />
     </div>
   );
 }
