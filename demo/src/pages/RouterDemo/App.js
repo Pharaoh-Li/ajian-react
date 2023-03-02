@@ -4,6 +4,8 @@ import Home from '../Home'
 import About from '../About'
 import User from '../User'
 
+
+// context不受shouldComponentDidMount影响
 const AppDemo = () => {
 
   return <BrowserRouter>
