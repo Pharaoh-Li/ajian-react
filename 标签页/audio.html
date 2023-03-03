@@ -18,7 +18,30 @@
   </style>
   <body>
     <div class="box">
-      <audio controls src="audio/01.mp3"></audio>
+      <audio controls src=""></audio>
     </div>
+    <script>
+      const audio = document.querySelector('audio')
+
+      audio.ondurationchange = () => {
+        audio.currentTime = 0
+        audio.play()
+      }
+
+      function play(name) {
+        audio.src = `./audio/${name}.mp3`
+      }
+
+      function init() {
+        const url = new URL(location.href)
+        const name = url.searchParams.get('name')
+        if (!name) {
+          return;
+        }
+        play(name)
+      }
+
+      init()
+    </script>
   </body>
 </html>

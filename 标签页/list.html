@@ -44,19 +44,26 @@
   <div class="list">
     <div class="item">
       狗叫声
-      <div class="sanjiao"></div>
+      <div data-name="01" class="sanjiao"></div>
     </div>
     <div class="item">
       海鸥叫声
-      <div class="sanjiao"></div>
+      <div data-name="02" class="sanjiao"></div>
     </div>
     <div class="item">
       鸟叫声
-      <div class="sanjiao"></div>
+      <div data-name="03" class="sanjiao"></div>
     </div>
   </div>
 </body>
 <script>
+  const playBtns = document.querySelectorAll('div[data-name]')
 
+  for (const btn of playBtns) {
+    btn.onclick = e => {
+      console.log(e.target.dataset.name);
+      window.open(`./audio.html?name=${e.target.dataset.name}`, '_blank')
+    }
+  }
 </script>
 </html>
